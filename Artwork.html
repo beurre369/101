@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+    <head>
+        <title>TENTEN WORKS</title>
+        <style>
+            #content{ 
+                overflow: auto;
+                margin-left: 250px;
+                height: 100%;
+                width: 500%;          
+                padding-left: 100px;
+                padding-top: 50px;
+                color: #333;
+                text-align: left;
+                background-color:#f1f1f1;
+            }
+            ul{
+                background-color:#f2f2f2;
+                text-overflow:inherit;
+                overflow: scroll;
+                width: 250px;
+                list-style-type: none;
+                font-size: 120%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                position: fixed;
+                text-align: center;
+                line-height: 1em;
+            }
+            li {
+                text-decoration: none;
+                display: block;
+                line-height: 1.4em;
+                padding: 8px 16px;
+                color: black;
+            }    
+            li:hover{
+                background-color: #555555;
+                color: white;
+            }
+            li a{
+                text-decoration: none;
+                display: block;
+                padding: 8px 16px;
+                color: black;
+            }    
+            li a.active{
+                background-color: #4caf50;
+                color: white;
+            }
+            li a:hover:not(.active){
+                background-color: #555555;
+                color: white;
+            }
+            .grid {
+                display: grid;
+                grid-template-columns: auto auto auto;
+                grid-auto-rows:  minimax(400px, auto);
+                grid-column-gap: 20px;
+                grid-row-gap: 20px;
+                justify-content: flex-start;            
+            }
+            .grid img{
+                width: 300px;                
+                border: 1px solid #ccc;
+                box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+            }
+            .grid img:hover {
+                transition: .3s transform;
+                transform: scale(1.1, 1.1);
+            }
+            h1.strong{
+                font-size: 40px;
+                line-height: normal;            
+                margin-left: auto;
+                padding-left: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="navbar">
+            <ul>
+                <br>
+                <li><a href="main.html"><h1 class="strong">T E N <br>T E N <br>WORKS</h1>
+                </a></li>
+                <li class="menu">
+                    <a href="Artwork.html">ARTWORK</a>
+                    <!--
+                    <ul class="hide">
+                       <li>Painting</li>
+                        <li>Illustration</li>
+                    </ul>
+                </li> -->
+                <li>COLLABO</li>
+                <li>EXHIBITION</li>
+                <li>CLASS</li>
+                <li>CONTACT</li>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <h6>emailname@email.com</h6>
+                <h6>&copy;2020 TENTEN&#44; RAM</h6>
+            </ul>
+        </div>
+        <div id="content">
+            <h1>ARTWORK</h1>
+            
+            <div class="grid">
+                <img src="1010.jpg">
+                <img src="1011.jpg">
+                <img src="1010.jpg">
+                <img src="1011.jpg">
+                <img src="1010.jpg">
+                <img src="1011.jpg">
+                <img src="1010.jpg">
+                <img src="1011.jpg">
+                <img src="1010.jpg">
+                <img src="1011.jpg">
+            </div>
+        </div>
+    </body>
+</html>
