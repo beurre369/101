@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+    <head>
+        <title>TENTEN WORKS</title>
+        <style>
+            * {
+                font-family: helvetica;
+            }
+            #content{ 
+                overflow: auto;
+                margin-left: 250px;
+                height: 500%;
+                width: 500%;          
+                padding-left: 100px;
+                padding-top: 50px;
+                padding-bottom: 150em;
+                color: #333;
+                text-align: left;
+                background-color: #f2f2f2;
+            }
+            ul{
+                background-color:white;
+                text-overflow:inherit;
+                overflow: scroll;
+                width: 250px;
+                list-style-type: none;
+                font-size: 120%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                position: fixed;
+                text-align: center;
+                line-height: 1.2em;
+            }
+            li {
+                text-decoration: none;
+                display: block;
+                line-height: 0.4em;
+                padding-left: 6px;
+                padding-top: 6px;
+                padding-bottom: 6px;
+                color: black;
+            }    
+            li:hover{
+                background-color: #555555;
+                color: white;
+            }
+            li a{
+                text-decoration: none;
+                display: block;
+                color: black;
+            }    
+            li a.active{
+                background-color: #4caf50;
+                color: white;
+            }
+            li a:hover:not(.active){
+                background-color: #555555;
+                color: white;
+            }
+            .grid {
+                display: grid;
+                grid-template-columns: auto auto auto;
+                grid-auto-rows: minimax(400px, auto);
+                grid-column-gap: 20px;
+                grid-row-gap: 20px;
+                justify-content: flex-start;            
+            }
+            .grid img{
+                width: 500px;                
+                border: 1px solid #ccc;
+                box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+            }
+            .grid img:hover {
+                transition: .3s transform;
+                transform: scale(1.1, 1.1);
+            }
+            h1.strong{
+                color:black;
+                font-size: 50px;
+                line-height: normal;           
+                margin-left: auto;
+                padding-left: auto;
+            }
+            
+            .menu a{
+                cursor: pointer;
+            }
+            .menu.hide{
+                display: none;
+            }
+            #index{                
+                text-align: left;
+                padding-left:52px;
+                line-height: 2.2em;
+                color: balck;
+                font-size: 15px;
+            }
+            #index:hover{
+                font-weight: 600;
+            }
+            #index>li a.active{
+                 background-color: #555555;
+                color: white;
+            }
+            h6{
+              line-height: 0px;  
+            }
+            details summary::-webkit-details-marker{
+                display: none;
+            }
+        </style>
+        
+        
+    </head>
+    <body>
+                <div id="navbar">
+            <ul>
+                <br>
+                <li><a href="http://1010works.com/"><img src="logo.jpg">
+                </a></li>
+                <br><br><br><br>
+                <details id="index">
+                    <summary><a href="about.html">ABOUT</a></summary>
+                </details>
+                <details id="index">
+                    <summary>ARTWORK</summary>
+                    <li><a href="ArtworkIllustration.html">Illustration</a></li>
+                    <li><a>Books</a></li>
+                    <li><a>Products</a></li>
+                </details>
+                <details id="index">
+                    <summary>COLLABORATION</summary>
+                </details>
+                <details id="index">
+                    <summary>EXHIBITION</summary>
+                </details>
+                <details id="index">
+                    <summary>CLASS</summary>
+                    <li><a>Illustration 1</a></li>
+                    <li><a>Animation 1</a></li>
+                    <li><a>Drawing 1</a></li>
+                </details>
+                <details id="index">
+                    <summary>BLOG</summary>
+                </details>
+                <details id="index">
+                    <summary>CONTACT</summary>
+                    <li><a href="https://www.instagram.com/1010works/">Instagram</a></li>
+                </details>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <h6>1010works@naver.com</h6>
+                <h6> &copy; 1010, 2020</h6>
+            </ul>
+        </div>
+        <div id="content">
+            <h1>NOW</h1>
+            <p><a href="https://www.instagram.com/1010works/">인스타 그램</a>에 2월 배경화면이 올라와 있습니다.</p>
+            <div class="grid">
+                <p><img src="1010.jpg"></p>
+            </div>
+        </div>
+    </body>
+</html>
