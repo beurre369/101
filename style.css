@@ -34,6 +34,7 @@
                 padding-top: 6px;
                 padding-bottom: 6px;
                 color: black;
+                
             }    
             li:hover{
                 background-color: #555555;
@@ -109,19 +110,120 @@
             }
 }
 
-@media(max-width:800px){
-  .grid {
-                display: grid;
+@media(max-width:600px){
+    
+    #content{ 
+        display: block;
+                overflow: auto;
+                height: 100%;
+                width: 90%;
+                color: #333;
+        padding: 16px 16px;
+                text-align: center;
+                background-color: white;
+            }
+    ul{
+                
+                background-color:white;
+                text-overflow:inherit;
+                overflow: hidden;
+                width: 100%;
+                list-style-type: none;
+                font-size: 120%;
+                height: 20%;
+                margin: 0;
+                padding: 0;
+                position: fixed;
+                text-align: center;
+             
+            }
+            li {
+                text-decoration: none;
+                display: block;
+                line-height: 0.5em;
+                padding-left: 0px;
+                padding-top: 6px;
+                padding-bottom: 6px;
+                color: white;
+            }    
+            li:hover{
+                background-color: #555555;
+                color: white;
+            }
+            li a{
+                text-decoration: none;
+                display: block;
+                color: black;
+            }    
+            li a.active{
+                background-color: #4caf50;
+                color: white;
+            }
+            li a:hover:not(.active){
+                background-color: #555555;
+                color: white;
+            }
+            .grid {
+                display: block;
                 grid-template-columns: auto auto auto;
                 grid-auto-rows: minimax(400px, auto);
                 grid-column-gap: 20px;
                 grid-row-gap: 20px;
                 justify-content: flex-start;            
             }
-            
-   #navbar a{
-                text-decoration:none;
-                color: black;
+            .grid img{
+                width: 80%;                
+                border: 1px solid #ccc;
+                box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+            }
+            .grid img:hover {
+                transition: .3s transform;
+                transform: scale(1.1, 1.1);
+            }
+            h1.strong{
+                color:black;
+                font-size: 50px;
+                line-height: normal;           
+                margin-left: auto;
+                padding-left: auto;
+            }
+            .menu a{
+                cursor: pointer;
+            }
+            .menu.hide{
+                display: none;
+            }
+    #logo{
+        width: 60px;
+        height: auto;
+    }
+            #index{                
+                text-align: left;
+                line-height: 2em;
+                color: white;
                 background-color: black;
-            }         
+                font-size: 7px;
+            }
+            #index:hover{
+                font-weight: 600;
+            }
+            #index>li a.active{
+                 background-color: #555555;
+                color: white;
+            }
+            h6{
+              line-height: 0px;  
+            }
+            details summary::-webkit-details-marker{
+                display: none;
+                
+            }
+            #navbar{
+                position: fixed;
+                display: block;
+                text-decoration:none;
+                max-height: 10em;
+                color: white;
+                background-color: antiquewhite;
+            }
 }
