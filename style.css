@@ -110,7 +110,7 @@
             }
 }
 
-@media(max-width:600px){
+@media(max-width:800px){
     
     #content{ 
         display: block;
@@ -119,18 +119,21 @@
                 width: 90%;
                 color: #333;
         padding: 16px 16px;
+        padding-top: 15%;
                 text-align: center;
                 background-color: white;
             }
     ul{
-                
-                background-color:white;
+                top: 0px;
+        left: 0px;
+                background-color: white;
                 text-overflow:inherit;
                 overflow: hidden;
                 width: 100%;
                 list-style-type: none;
                 font-size: 120%;
-                height: 20%;
+                height: 10%;
+        border-bottom: 1px solid black;
                 margin: 0;
                 padding: 0;
                 position: fixed;
@@ -142,21 +145,23 @@
                 display: block;
                 line-height: 0.5em;
                 padding-left: 0px;
-                padding-top: 6px;
+                padding-top: 0px;
                 padding-bottom: 6px;
                 color: white;
             }    
             li:hover{
-                background-color: #555555;
+                background-color: white;
                 color: white;
             }
             li a{
                 text-decoration: none;
                 display: block;
                 color: black;
+                margin: 0px;
+                padding: 0px;
             }    
             li a.active{
-                background-color: #4caf50;
+                background-color: white;
                 color: white;
             }
             li a:hover:not(.active){
@@ -169,12 +174,14 @@
                 grid-auto-rows: minimax(400px, auto);
                 grid-column-gap: 20px;
                 grid-row-gap: 20px;
-                justify-content: flex-start;            
+                justify-content: flex-start;         
+                
             }
             .grid img{
                 width: 80%;                
                 border: 1px solid #ccc;
                 box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+                
             }
             .grid img:hover {
                 transition: .3s transform;
@@ -186,26 +193,35 @@
                 line-height: normal;           
                 margin-left: auto;
                 padding-left: auto;
+                
             }
             .menu a{
                 cursor: pointer;
+                
             }
             .menu.hide{
                 display: none;
+                
             }
     #logo{
-        width: 60px;
-        height: auto;
+        top: 0px;        
+        overflow: auto;
+        height: 100%;
+        width: auto;
+        padding-left: 0px;
+        margin-left: 0px;
     }
             #index{                
                 text-align: left;
-                line-height: 2em;
+                line-height: 1em;
                 color: white;
                 background-color: black;
                 font-size: 7px;
+                
             }
             #index:hover{
                 font-weight: 600;
+                
             }
             #index>li a.active{
                  background-color: #555555;
@@ -215,15 +231,19 @@
               line-height: 0px;  
             }
             details summary::-webkit-details-marker{
+                
                 display: none;
                 
             }
-            #navbar{
-                position: fixed;
-                display: block;
+    #navbar{
+                display: grid;
                 text-decoration:none;
-                max-height: 10em;
+                max-height: 21em;
                 color: white;
-                background-color: antiquewhite;
+                background-color: black;
             }
+    ul li{        
+        padding: 0;
+        margin: 0;
+    }
 }
