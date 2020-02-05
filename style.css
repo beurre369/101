@@ -1,6 +1,7 @@
- * {
-                font-family: helvetica;
-            }
+ * {font-family: helvetica;}
+
+@media(min-width:800px) {
+  
             #content{ 
                 overflow: auto;
                 margin-left: 250px;
@@ -108,3 +109,7 @@
                 text-decoration:none;
                 color: black;
             }
+}
+
+@media(max-width:800px){
+}
