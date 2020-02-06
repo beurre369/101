@@ -1,6 +1,5 @@
 * {font-family: helvetica;}
-@media(min-width:800px) {
-            #content{ 
+#content{ 
                 overflow: auto;
                 margin-left: 250px;
                 height: 500%;
@@ -12,7 +11,7 @@
                 text-align: left;
                 background-color: white;
             }
-            ul{
+ul{
                 background-color:white;
                 text-overflow:inherit;
                 overflow: scroll;
@@ -26,7 +25,7 @@
                 text-align: center;
                 line-height: 1.2em;
             }
-            li {
+li {
                 text-decoration: none;
                 display: block;
                 line-height: 0.4em;
@@ -36,24 +35,24 @@
                 color: black;
                 
             }    
-            li:hover{
+li:hover{
                 background-color: #555555;
                 color: white;
             }
-            li a{
+li a{
                 text-decoration: none;
                 display: block;
                 color: black;
             }    
-            li a.active{
+li a.active{
                 background-color: #4caf50;
                 color: white;
             }
-            li a:hover:not(.active){
+li a:hover:not(.active){
                 background-color: #555555;
                 color: white;
             }
-            .grid {
+.grid {
                 display: grid;
                 grid-template-columns: auto auto auto;
                 grid-auto-rows: minimax(400px, auto);
@@ -61,189 +60,53 @@
                 grid-row-gap: 20px;
                 justify-content: flex-start;            
             }
-            .grid img{
+.grid img{
                 width: 500px;                
                 border: 1px solid #ccc;
                 box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
             }
-            .grid img:hover {
+.grid img:hover {
                 transition: .3s transform;
                 transform: scale(1.1, 1.1);
             }
-            h1.strong{
+h1.strong{
                 color:black;
                 font-size: 50px;
                 line-height: normal;           
                 margin-left: auto;
                 padding-left: auto;
-            }
-            
-            .menu a{
+            }            
+.menu a{
                 cursor: pointer;
             }
-            .menu.hide{
+.menu.hide{
                 display: none;
             }
-            #index{                
+#index{                
                 text-align: left;
                 padding-left:52px;
                 line-height: 2.2em;
                 color: balck;
                 font-size: 15px;
             }
-            #index:hover{
+index:hover{
                 font-weight: 600;
             }
-            #index>li a.active{
+#index>li a.active{
                  background-color: #555555;
                 color: white;
             }
-            h6{
+h6{
               line-height: 0px;  
             }
-            details summary::-webkit-details-marker{
+details summary::-webkit-details-marker{
                 display: none;
             }
-            #navbar a{
+#navbar a{
                 text-decoration:none;
                 color: black;
             }
-}
-
-@media(max-width:800px){
-    
-    #content{ 
-        display: block;
-                overflow: auto;
-                height: 100%;
-                width: 100%;
-                color: #333;
-        padding: 16px 16px;
-        padding-top: 15%;
-                text-align: center;
-                background-color: white;
-            }
-    ul{
-                top: 0px;
-        left: 0px;
-                background-color: white;
-                text-overflow:inherit;
-                overflow: hidden;
-                width: 100%;
-                list-style-type: none;
-                font-size: 120%;
-                height: 10%;
-        border-bottom: 1px solid black;
-                margin: 0;
-                padding: 0;
-                position: fixed;
-                text-align: center;
-             
-            }
-            li {
-                text-decoration: none;
-                display: block;
-                line-height: 0.5em;
-                padding-left: 0px;
-                padding-top: 0px;
-                padding-bottom: 6px;
-                color: white;
-            }    
-            li:hover{
-                background-color: white;
-                color: white;
-            }
-            li a{
-                text-decoration: none;
-                display: block;
-                color: black;
-                margin: 0px;
-                padding: 0px;
-            }    
-            li a.active{
-                background-color: white;
-                color: white;
-            }
-            li a:hover:not(.active){
-                background-color: #555555;
-                color: white;
-            }
-            .grid {
-                display: block;
-                grid-template-columns: auto auto auto;
-                grid-auto-rows: minimax(400px, auto);
-                grid-column-gap: 20px;
-                grid-row-gap: 20px;
-                justify-content: flex-start;         
-                
-            }
-            .grid img{
-                width: 80%;                
-                border: 1px solid #ccc;
-                box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
-                
-            }
-            .grid img:hover {
-                transition: .3s transform;
-                transform: scale(1.1, 1.1);
-            }
-            h1.strong{
-                color:black;
-                font-size: 50px;
-                line-height: normal;           
-                margin-left: auto;
-                padding-left: auto;
-                
-            }
-            .menu a{
-                cursor: pointer;
-                
-            }
-            .menu.hide{
-                display: none;
-                
-            }
-    #logo{
-        top: 0px;        
-        overflow: auto;
-        height: 100%;
-        width: auto;
-        padding-left: 0px;
-        margin-left: 0px;
-    }
-            #index{                
-                text-align: left;
-                line-height: 1em;
-                color: white;
-                background-color: black;
-                font-size: 7px;
-                
-            }
-            #index:hover{
-                font-weight: 600;
-                
-            }
-            #index>li a.active{
-                 background-color: #555555;
-                color: white;
-            }
-            h6{
-              line-height: 0px;  
-            }
-            details summary::-webkit-details-marker{
-                
-                display: none;
-                
-            }
-    #navbar{
-                display: grid;
-                text-decoration:none;
-                max-height: 21em;
-                color: white;
-                background-color: black;
-            }
-    ul li{        
-        padding: 0;
-        margin: 0;
-    }
+.container {
+  display: inline-block;
+  cursor: pointer;
 }
