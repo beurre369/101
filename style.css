@@ -1,5 +1,5 @@
 * {font-family: helvetica;}
-@media(min-width:1000px) {
+@media(min-width:800px) {
             #content{ 
                 overflow: auto;
                 margin-left: 250px;
@@ -110,13 +110,13 @@
             }
 }
 
-@media(max-width:1000px){
+@media(max-width:800px){
     
     #content{ 
         display: block;
                 overflow: auto;
                 height: 100%;
-                width: 90%;
+                width: 100%;
                 color: #333;
         padding: 16px 16px;
         padding-top: 15%;
