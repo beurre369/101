@@ -2,11 +2,11 @@
 #content{ 
                 overflow: auto;
                 margin-left: 250px;
-                height: 500%;
-                width: 500%;          
+                height: 100%;
+                width: 100%;          
                 padding-left: 100px;
                 padding-top: 50px;
-                padding-bottom: 150em;
+                padding-bottom: 50em;
                 color: #333;
                 text-align: left;
                 background-color: white;
